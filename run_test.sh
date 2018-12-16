@@ -1,5 +1,5 @@
 az -v && \
 docker-compose --version && \
 docker -v && \
-kubectl version && \
-helm version
+kubectl version --client && \
+helm version --client
