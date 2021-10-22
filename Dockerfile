@@ -1,9 +1,10 @@
 FROM docker:stable
 
 RUN apk update
+RUN apk upgrade
 RUN apk add bash
 RUN apk add --virtual=build gcc libffi-dev musl-dev openssl openssl-dev curl python3 python3-dev make
-RUN apk add python3-pip
+RUN apk add py3-pip
 RUN pip install --upgrade pip setuptools
 RUN pip install cffi azure-cli
 RUN if [[ ! -e /usr/bin/python ]]; \
