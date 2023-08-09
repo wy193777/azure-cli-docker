@@ -16,5 +16,4 @@ RUN az aks install-cli
 RUN curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
 RUN chmod 700 get_helm.sh
 RUN ./get_helm.sh
-RUN pip install docker-compose
 COPY ./run_test.sh ./
