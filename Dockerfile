@@ -1,4 +1,4 @@
-FROM docker:stable
+FROM docker:dind-rootless
 
 RUN apk update
 RUN apk upgrade
