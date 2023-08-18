@@ -1,7 +1,7 @@
 FROM quay.io/buildah/stable
 
 RUN dnf makecache --refresh
-RUN dnf -y install gcc libffi-dev musl-dev openssl openssl-dev curl python3 python3-dev make
+RUN dnf -y install gcc libffi musl openssl curl python3 python3-dev make
 RUN dnf -y install py3-pip
 RUN pip install --upgrade pip setuptools
 RUN pip install cffi azure-cli
