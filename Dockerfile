@@ -1,4 +1,4 @@
-FROM docker:dind-rootless
+FROM quay.io/buildah/stable
 
 RUN apk update
 RUN apk upgrade
